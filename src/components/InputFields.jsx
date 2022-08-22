@@ -14,3 +14,6 @@ const InputFields = ({ text, setText, addTodo }) => {
 };
 
 export default InputFields;
+
+// test
+//testredux
