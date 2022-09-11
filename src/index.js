@@ -5,6 +5,8 @@ import App from './App'
 
 import './api/server'
 
+import store from './store'
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
