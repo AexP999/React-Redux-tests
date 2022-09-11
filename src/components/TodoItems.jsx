@@ -1,21 +1,19 @@
 import React from 'react';
 
 const TodoItems = ({
-  id,
-  text,
-  completed,
+  todo,
   deleteTodo,
   toggleTodoCompleted,
 }) => {
   return (
-    <li key={id}>
+    <li key={todo.id}>
       <input
         type='checkbox'
-        checked={completed}
-        onChange={() => toggleTodoCompleted(id)}
+        checked={todo.completed}
+        onChange={() => toggleTodoCompleted(todo.id)}
       />
-      <span>{text}</span>
-      <span className='delete' onClick={() => deleteTodo(id)}>
+      <span>{todo.text}</span>
+      <span className='delete' onClick={() => deleteTodo(todo.id)}>
         &times;
       </span>
     </li>
